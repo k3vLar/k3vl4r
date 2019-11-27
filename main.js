@@ -12,7 +12,7 @@ function createWindow () {
     width: 1000,
     height: 275,
     webPreferences: {
-      preload: path.join(__dirname, 'js/preLoader.js')
+      preload: path.join(__dirname, 'js/preload.js')
     }
   });
 
