@@ -12,13 +12,13 @@ $(document).ready(function () {
         for (i = 0; i < myMapData.length; i++) {
             var Item = myMapData[i]['name'].split(",");
             $("#UITable tbody").append("<tr>" +
-                "<td>" + myMapData[i]['ip'] + "</td>"
-                + "<td>" + myMapData[i]['port'] + "</td>"
-                + "<td>" + Item[0] + "</td>"
-                + "<td>" + Item[1] + "</td>"
-                + "<td>" + Item[2] + "</td>"
-                + "<td>" + myMapData[i]['value'][0] + "," + myMapData[i]['value'][1] + "</td>"
-                + "</tr>");
+                    "<td>" + myMapData[i]['ip'] + "</td>"
+                    + "<td>" + myMapData[i]['port'] + "</td>"
+                    + "<td>" + Item[0] + "</td>"
+                    + "<td>" + Item[1] + "</td>"
+                    + "<td>" + Item[2] + "</td>"
+                    + "<td>" + myMapData[i]['value'][0] + "," + myMapData[i]['value'][1] + "</td>"
+                    + "</tr>");
 
         }
 
