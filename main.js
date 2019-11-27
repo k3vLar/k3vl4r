@@ -19,6 +19,7 @@ function createWindow () {
   dataWindow = new BrowserWindow({
     width: 1000,
     height: 600,
+    frame: false,
     webPreferences: {
       preload: path.join(__dirname, 'js/dataWindowPreloader.js')
     }
