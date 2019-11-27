@@ -148,7 +148,7 @@ myMapData = mapData;
                         },
                         label: {
                         show: true,
-                                formatter: param = > param.data.name
+                                formatter: param => param.data.name
                         },
                         data: Destinations
                 }

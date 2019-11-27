@@ -3,6 +3,7 @@ $(document).ready(function () {
     function updateData() {
 
         console.log("TEST");
+        
     }
 
     $.getJSON("mapData.json", function (mapData) {
