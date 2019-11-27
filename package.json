@@ -1,7 +1,7 @@
 {
   "name": "k3vl4r",
   "version": "1.0.0",
-  "description": "A cybersecurity detection and reporting solution.",
+  "description": "A cybersecurity georg reporting tool.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
