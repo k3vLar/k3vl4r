@@ -1,25 +1,19 @@
 $(document).ready(function () {
 
 function onlyUnique(value, index, self) {
-//console.log(index + " " + value[0]['name']);
 return self.indexOf(value) === index;
-}
+        }
 
+function loadGlobe() {
 
 $.getJSON("mapData.json", function (mapData) {
 
 myMapData = mapData;
+
         $.getJSON("myGeo.json", function (myGeo) {
 
         myGeoData = myGeo;
-                geoCoordMap = {
-                'New York': [ - 74.005974, 40.712776],
-                        'Los Angeles': [ - 118.243683, 34.052235],
-                        'loc3': [107.7539, 30.1904],
-                        'loc4': [139.710164, 35.706962],
-                        'London': [ - 0.127758, 51.507351],
-                        'Russia': [105.318756, 61.524010]
-                };
+                geoCoordMap = {};
                 //geoCoordMap['Mountain View,CA,US'] = [-122.0748, 37.4043];
                 geoCoordMap[myGeoData['city'] + "," + myGeoData['region'] + "," + myGeoData['country']] = [ - 77.4457, 38.8867];
                 CQData = [];
@@ -226,5 +220,10 @@ myMapData = mapData;
 
 
         });
-});
         });
+        }
+
+loadGlobe();
+
+setInterval(function(){ loadGlobe(); }, 10000);
+});
